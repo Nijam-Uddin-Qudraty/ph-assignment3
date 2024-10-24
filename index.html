@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,10 +20,121 @@
         }
      </style>
 </head>
-<body>
+<body class=" mx-4 lg:mx-32 mt-14">
     <!-- header  -->
      <header>
+        <!-- nav  -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <!-- start  -->
+                <div class="navbar-start">
+                    
+                    <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h7" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li class="text-error"><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="pages.html">Pages</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-5xl font-bold">Hockey<span class="text-error -ml-2    ">’</span> <span class="-ml-3">s</span></a>
+                </div>
+                <!-- center  -->
+                <div class="navbar-center">
+                  <ul class="flex gap-12 lg:visible invisible ">
+                    <li class="text-error"><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pages.html">Pages</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+                <!-- end  -->
+                <div class="navbar-end">
+                  <button class="btn btn-ghost btn-circle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                  <button class="btn btn-ghost text-white bg-error text-xl font-semibold">
+                    Get Ticket
+                  </button>
+                </div>
+              </div>
+        </nav> 
+        <section>
 
+            <div class="relative carousel w-full mt-12">
+
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img
+                    src="/Images/1.png" />
+                    <div class="absolute lg:left-8 left-56 bottom-8 flex -translate-y-1/2 transform justify-between gap-10 ">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                    
+                    <!-- visible in small -->
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img
+                    src="Images/2.png"
+                    class="w-full" />
+                  <div class="absolute lg:left-8 left-56 bottom-8 flex -translate-y-1/2 transform justify-between gap-10 ">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+                    <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img
+                    src="Images/3.png"
+                    class="w-full" />
+                  <div class="absolute lg:left-8 left-56 bottom-8 flex -translate-y-1/2 transform justify-between gap-10 ">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
+                    <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img
+                    src="Images/4.png"
+                    class="w-full" />
+                  <div class="absolute lg:left-8 left-56 bottom-8 flex -translate-y-1/2 transform justify-between gap-10 ">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
+                    <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div>
+              </div>
+              <div class=" p-8 rounded-2xl lg:absolute bottom-40 left-2/4 right-44 bg-black text-white">
+                <h3 class="text-2xl font-bold">Meet all the heroes from the field</h3>
+                <p class="text-base ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+        </section>
      </header>
      <!-- main -->
       <main>
